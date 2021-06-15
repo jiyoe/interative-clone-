@@ -1,0 +1,51 @@
+html {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+	margin: 0;
+}
+div, section, header, footer, p, h1, h2 {
+	box-sizing: border-box;
+}
+a {
+	color: royalblue;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+//이미지들 통째로 그룹화한 class
+.scroll-graphic {
+	position: sticky; //이미지가 스크롤이 되다가 브라우저에 붙으면 고정되서 스크롤이 끝날때까지 유지 
+	top: 0;
+	height: 70vh;
+}
+.global-width{
+	max-width: 620px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+.graphic-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	//이미지가 투명해지면서 바뀌니까 이미지들이 겹쳐지게 해줌
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.scene-text {
+	max-width: 100vh;
+}
+.scroll-text{
+	position: relative;
+}
+.step {
+	margin-bottom: 60vh;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0,0.3) 0 0 3px;
+}
