@@ -14,14 +14,16 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-//이미지들 통째로 그룹화한 class
+/* 이미지들 통째로 그룹화한 class */
 .scroll-graphic {
-	position: sticky; //이미지가 스크롤이 되다가 브라우저에 붙으면 고정되서 스크롤이 끝날때까지 유지 
+	/* 이미지가 스크롤이 되다가 브라우저에 붙으면 고정되서 스크롤이 끝날때까지 유지  */
+	position: sticky;
+	/* 탑 0을 해줘야 sticky가 적용된엘리먼트의 위치 */
 	top: 0;
 	height: 70vh;
 }
 .global-width{
-	max-width: 620px;
+	max-width: 660px;
 	margin: 0 auto;
 	padding: 0 1rem;
 }
@@ -29,20 +31,22 @@ img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	//이미지가 투명해지면서 바뀌니까 이미지들이 겹쳐지게 해줌
+	/* 이미지가 투명해지면서 바뀌니까 이미지들이 겹쳐지게 해줌 */
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
 }
-.scene-text {
-	max-width: 100vh;
+.scene-img {
+	max-height: 70vh;
 }
 .scroll-text{
 	position: relative;
+	padding-bottom: 1px;
 }
 .step {
+	/* 박스와 박스사이  */
 	margin-bottom: 60vh;
 	padding: 0.5rem 1rem;
 	border-radius: 10px;
