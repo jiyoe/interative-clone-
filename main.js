@@ -19,7 +19,7 @@
         stepElems[i].dataset.index = i;
         graphicElems[i].dataset.index = i;
     }
-    
+
     function activate() {
         currentItem.classList.add('visible');
     }
@@ -35,9 +35,11 @@
         // for (let i =0; i < stepElems.length; i++ ){
         for(let i = ioIndex -1 ; i < ioIndex +2; i++){
             step = stepElems[i];
+            //step에 값이 없다면,continue
             if(!step) continue;
             boundingRect = step.getBoundingClientRect();
 
+            //화면에 보이는 innerHeight가 0.1 에서 0.8
             if (boundingRect.top > window.innerHeight * 0.1 &&
                 boundingRect.top < window.innerHeight * 0.8) {
 
