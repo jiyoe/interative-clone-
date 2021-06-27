@@ -1,5 +1,13 @@
 (() => {
 
+    //
+    const actions = {
+        birdFlies() {
+            document.querySelector('[data-index="2"] .bird').style.transform = `translateX(${window.
+            innerWidth}px)`;
+        }
+    }
+
     const stepElems = document.querySelectorAll('.step');
     const graphicElems = document.querySelectorAll('.graphic-item');
     //현재활성화된(visible 클래스가 붙은) .graphic-item을 저장
