@@ -28,8 +28,11 @@
         graphicElems[i].dataset.index = i;
     }
 
-    function activate() {
+    function activate(action) {
         currentItem.classList.add('visible');
+        if (action) {
+            actions[action]();
+        }
     }
 
     function inactivate() {
@@ -53,7 +56,7 @@
 
                     inactivate();
                     currentItem = graphicElems[step.dataset.index];
-                    activate();
+                    activate(currentItem.dataset.action);
                 }
         }
     });
