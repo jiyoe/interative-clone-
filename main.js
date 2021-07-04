@@ -27,14 +27,14 @@
         stepElems[i].dataset.index = i;
         graphicElems[i].dataset.index = i;
     }
-
+    //장면이 활성화 될때 실행되는 함수
     function activate(action) {
         currentItem.classList.add('visible');
         if (action) {
             actions[action]();
         }
     }
-
+    //비활성화 될때 실행되는 함수 
     function inactivate() {
         currentItem.classList.remove('visible');
     }
