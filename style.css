@@ -16,6 +16,8 @@ img {
 }
 /* 이미지들 통째로 그룹화한 class */
 .scroll-graphic {
+	/* 날아가는 새때문에 옆으로 스크롤이 생기는 부분 수정 */
+	overflow-x: hidden;
 	/* 이미지가 스크롤이 되다가 브라우저에 붙으면 고정되서 스크롤이 끝날때까지 유지  */
 	position: sticky;
 	/* 탑 0을 해줘야 sticky가 적용된엘리먼트의 위치 */
@@ -67,4 +69,8 @@ img {
 	transform: translateX(-100%);
 	/* 재생시간 /지연시간 / 일정한 속도  */
 	transition: 1.5s 0.5s linear; 
+}
+[data-index="5"] .bird {
+	left: 30%;
+	bottom: 30%;
 }
