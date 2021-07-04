@@ -74,3 +74,8 @@ img {
 	left: 30%;
 	bottom: 30%;
 }
+
+.global-footer {
+	padding: 2rem 0;
+	text-align: center;
+}
