@@ -57,12 +57,12 @@
             //step에 값이 없다면,continue
             if(!step) continue;
             boundingRect = step.getBoundingClientRect();
-
+            
             //화면에 보이는 innerHeight가 0.1 에서 0.8
             if (boundingRect.top > window.innerHeight * 0.1 &&
                 boundingRect.top < window.innerHeight * 0.8) {
-
-                inactivate();
+                
+                inactivate(currentItem.dataset.action);
                 currentItem = graphicElems[step.dataset.index];
                 activate(currentItem.dataset.action);
             }
